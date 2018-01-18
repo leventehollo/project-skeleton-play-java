@@ -4,6 +4,11 @@ TEMP_DIR="dist_temp"
 TARGET_DIR="dist"
 IMAGE_NAME="hello-play"
 
+#Cleanup the mess
+rm -rf target
+rm -rf $TEMP_DIR
+rm -rf $TARGET_DIR
+
 #Build artifact
 sbt dist
 
