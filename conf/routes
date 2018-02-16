@@ -1,3 +1,5 @@
 GET     /                           controllers.HomeController.index
+GET     /client                     controllers.ClientController.send
+GET     /server                     controllers.ServerController.send
 
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
